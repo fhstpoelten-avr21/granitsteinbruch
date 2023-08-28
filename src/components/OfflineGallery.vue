@@ -71,8 +71,8 @@ export default defineComponent({
     return {
       currentImageStyle: {},
       initPlay: true,
-      imageSource: 'src/assets/img/00_Welcome.jpg',
-      audioSource: 'src/assets/audio/00_Welcome.mp3',
+      imageSource: 'img/00_Welcome.jpg',
+      audioSource: 'audio/00_Welcome.mp3',
       currentTrackIndex: 0,
       shouldPlayAudio: false,
       audioDuration: 0,
