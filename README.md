@@ -1,4 +1,4 @@
-![spuren_logo.svg](src%2Fassets%2Fimg%2Fspuren_logo.svg)
+![spuren_logo.svg](./public/img/spuren_logo.svg)
 
 # DER STEINBRUCH, DAS LAGER UND DIE ORTSCHAFTEN
 
