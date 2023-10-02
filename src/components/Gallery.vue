@@ -4,7 +4,7 @@
         <ion-col class="p-0">
           <div>
             <img :src="currentImage" alt="Welcome">
-            <audio ref="audioPlayer" :src="currentAudio" @timeupdate="onTimeUpdate" @ended="playNextTrack"></audio>
+            <audio ref="audioPlayer" :src="require('@'+currentAudio)" @timeupdate="onTimeUpdate" @ended="playNextTrack"></audio>
             <progress class="w-full custom-progress" :max="audioDuration" :value="currentTime" @click="seekAudio"></progress>
             <ion-button v-show="!started" @click="startTour" class="action-btn" fill="clear">
               <ion-icon slot="start" :icon="play()" style="color:#505050; font-size: 45px;"></ion-icon>
@@ -77,9 +77,11 @@ export default defineComponent({
   },
   computed: {
     currentAudio() {
+      console.log('audio', this.tracks[this.currentTrackIndex].audio)
       return this.tracks[this.currentTrackIndex].audio
     },
     currentImage() {
+      console.log('img', this.tracks[this.currentTrackIndex].audio)
       return this.tracks[this.currentTrackIndex].image
     },
     alreadyVisited() {
